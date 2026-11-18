@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.SendPanda/sendpanda",
+  "title": "SendPanda",
+  "description": "Send email, manage domains, templates, webhooks and broadcasts from your AI agent.",
+  "version": "0.5.3",
+  "websiteUrl": "https://sendpanda.email",
+  "repository": {
+    "url": "https://github.com/SendPanda/packages",
+    "source": "github",
+    "subfolder": "packages/mcp"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.sendpanda.email/mcp"
+    }
+  ]
+}

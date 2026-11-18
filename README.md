@@ -29,6 +29,6 @@ This repository contains only the MIT-licensed public client packages. The SendP
 
 The npm scope remains `@sendpanda`. Changing the GitHub organisation does not change install commands. Existing npm releases retain their original repository metadata; a new version of each package is required to update its npm source link.
 
-This initial source export preserves existing package versions and does not publish npm releases. Before a release, bump the selected package version, review and test the archive, configure npm trusted publishing for this public repository, and verify the resulting registry integrity. The MCP registry identifier is retained for compatibility.
+Before a release, bump the selected package version, review and test the archive, and verify the resulting registry integrity. SendPanda’s official MCP Registry identifier is `io.github.SendPanda/sendpanda`. Both it and the older registry entry point to the same hosted MCP endpoint.
 
 [API and guides](https://sendpanda.email/docs) · [Report an issue](https://github.com/SendPanda/packages/issues)

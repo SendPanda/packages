@@ -1,6 +1,6 @@
 {
   "name": "@sendpanda/webhooks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Verify SendPanda webhook signatures and typed events on your server.",
   "private": false,
   "type": "module",

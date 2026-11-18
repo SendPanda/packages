@@ -1,6 +1,6 @@
 {
   "name": "@sendpanda/cli",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "SendPanda command line: manage every project, domain, key, template and email from a terminal or a coding agent.",
   "license": "MIT",
   "engines": {

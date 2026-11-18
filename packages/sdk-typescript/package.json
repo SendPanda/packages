@@ -1,0 +1,57 @@
+{
+  "name": "@sendpanda/sdk",
+  "version": "0.4.2",
+  "description": "The official server-side JavaScript and TypeScript SDK for SendPanda transactional email.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SendPanda/packages.git",
+    "directory": "packages/sdk-typescript"
+  },
+  "homepage": "https://sendpanda.email/docs",
+  "keywords": [
+    "sendpanda",
+    "email",
+    "transactional",
+    "sdk",
+    "typescript"
+  ],
+  "private": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --clean && tsc -p tsconfig.build.json && node ../../scripts/prepare-sdk.mjs",
+    "prepack": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/SendPanda/packages/issues"
+  }
+}

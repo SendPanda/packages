@@ -1,0 +1,56 @@
+{
+  "name": "@sendpanda/webhooks",
+  "version": "0.1.0",
+  "description": "Verify SendPanda webhook signatures and typed events on your server.",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SendPanda/packages.git",
+    "directory": "packages/webhooks"
+  },
+  "homepage": "https://sendpanda.email/docs",
+  "keywords": [
+    "sendpanda",
+    "webhooks",
+    "signature",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --clean && tsc -p tsconfig.build.json && node ../../scripts/prepare-sdk.mjs",
+    "prepack": "npm run build"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/SendPanda/packages/issues"
+  }
+}

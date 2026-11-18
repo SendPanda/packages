@@ -1,0 +1,43 @@
+{
+  "name": "@sendpanda/cli",
+  "version": "0.3.2",
+  "description": "SendPanda command line: manage every project, domain, key, template and email from a terminal or a coding agent.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "private": false,
+  "type": "module",
+  "bin": {
+    "sendpanda": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SendPanda/packages.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://sendpanda.email/docs",
+  "keywords": [
+    "sendpanda",
+    "email",
+    "cli",
+    "agent"
+  ],
+  "dependencies": {},
+  "scripts": {
+    "build": "tsup src/cli.ts --format esm --clean",
+    "prepack": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "bugs": {
+    "url": "https://github.com/SendPanda/packages/issues"
+  }
+}

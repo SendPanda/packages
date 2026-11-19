@@ -3,7 +3,7 @@
   "name": "io.github.SendPanda/sendpanda",
   "title": "SendPanda",
   "description": "Send email, manage domains, templates, webhooks and broadcasts from your AI agent.",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "websiteUrl": "https://sendpanda.email",
   "repository": {
     "url": "https://github.com/SendPanda/packages",
@@ -14,7 +14,7 @@
     {
       "registryType": "npm",
       "identifier": "@sendpanda/mcp",
-      "version": "0.5.4",
+      "version": "0.5.5",
       "transport": { "type": "stdio" },
       "environmentVariables": [
         {

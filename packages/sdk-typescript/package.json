@@ -1,6 +1,6 @@
 {
   "name": "@sendpanda/sdk",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "The official server-side JavaScript and TypeScript SDK for SendPanda transactional email.",
   "license": "MIT",
   "engines": {

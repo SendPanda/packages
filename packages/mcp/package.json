@@ -1,6 +1,6 @@
 {
   "name": "@sendpanda/mcp",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "mcpName": "io.github.SendPanda/sendpanda",
   "description": "Official SendPanda MCP server: transactional email, domains, templates, webhooks and marketing broadcasts.",
   "license": "MIT",

@@ -8,6 +8,10 @@ export type EmailMessage = {
   html?: string;
   text?: string;
   reply_to?: string;
+  /** The Message-ID this email answers, such as a received message's `message_id`. */
+  in_reply_to?: string;
+  /** Earlier Message-IDs in the conversation, oldest first (up to 20). */
+  references?: string[];
   tags?: { name: string; value: string }[];
   metadata?: Record<string, string>;
   template_id?: string;
@@ -177,6 +181,8 @@ export type InboundMessage = Omit<InboundMessageSummary, "attachments"> & {
   attachments: { name: string; size: number; type: string }[];
   message_id: string | null;
   in_reply_to: string | null;
+  /** The References header, oldest first. Missing on older messages. */
+  references?: string[];
   checks: Record<string, string>;
 };
 export type Webhook = {
